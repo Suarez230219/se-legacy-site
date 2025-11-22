@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>S&E Legacy GmbH | Gestión de patrimonio familiar desde Suiza</title>
-  <meta name="description" content="S&E Legacy GmbH es una sociedad suiza con sede en Lucerna dedicada a la optimización fiscal, gestión de rentas inmobiliarias y estructuración de patrimonio familiar con foco en España y Latinoamérica." />
+  <title>S&E Legacy GmbH | Family Office independiente en Suiza</title>
+  <meta name="description" content="S&E Legacy GmbH es un family office independiente con sede en Lucerna (Suiza) dedicado a la gestión integral del capital personal y patrimonio familiar, optimizando la estructura fiscal de activos en España, República Dominicana y otros mercados." />
 
   <style>
     :root {
-      --bg: #050814;
-      --bg-alt: #0b1020;
-      --card: #111829;
-      --accent: #d4af37;
-      --accent-soft: rgba(212, 175, 55, 0.15);
-      --text: #f5f5f7;
-      --text-muted: #a0a3b1;
-      --border: #252c3f;
-      --error: #ff4d4f;
+      /* Paleta de colores actualizada para transmitir confianza y profesionalidad */
+      --bg: #f8fafc;               /* fondo general claro */
+      --bg-alt: #ffffff;           /* fondos alternativos (tarjetas, secciones) */
+      --card: #ffffff;             /* color de las tarjetas */
+      --accent: #0d4b8f;           /* azul oscuro que inspira confianza */
+      --accent-soft: rgba(13, 75, 143, 0.15); /* azul suave */
+      --text: #1f2937;             /* gris oscuro para el texto principal */
+      --text-muted: #6b7280;       /* gris medio para texto secundario */
+      --border: #e5e7eb;           /* color de los bordes y líneas divisorias */
+      --error: #b91c1c;            /* rojo discreto para mensajes de error */
       --radius-lg: 1.5rem;
       --radius-md: 0.75rem;
-      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.45);
+      --shadow-soft: 0 12px 24px rgba(0, 0, 0, 0.1);
     }
 
     * {
@@ -29,8 +30,9 @@
     }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Roboto", sans-serif;
-      background: radial-gradient(circle at top left, #162447 0, #050814 45%, #000 100%);
+      /* Usamos la familia tipográfica Times New Roman para un aspecto clásico y elegante */
+      font-family: "Times New Roman", Times, serif;
+      background: var(--bg);
       color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -65,8 +67,9 @@
       top: 0;
       z-index: 20;
       backdrop-filter: blur(16px);
-      background: linear-gradient(to bottom, rgba(5,8,20,0.9), rgba(5,8,20,0.6), transparent);
-      border-bottom: 1px solid rgba(37,44,63,0.6);
+      /* Encabezado claro con degradado suave */
+      background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.7), transparent);
+      border-bottom: 1px solid var(--border);
     }
 
     .nav {
@@ -88,15 +91,17 @@
       height: 32px;
       border-radius: 999px;
       border: 1px solid var(--accent-soft);
-      background: radial-gradient(circle at 20% 0, #f5f5f7 0, #d4af37 20%, #111829 75%);
+      background: radial-gradient(circle at 20% 0, #ffffff 0, var(--accent) 40%, var(--accent) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 0.08em;
-      color: #050814;
-      box-shadow: 0 0 18px rgba(212, 175, 55, 0.5);
+      /* Texto en blanco para contrastar con el fondo azul */
+      color: #ffffff;
+      /* Sombra suave en torno al logotipo en tono azul */
+      box-shadow: 0 0 12px rgba(13, 75, 143, 0.4);
     }
 
     .logo-text {
@@ -173,9 +178,11 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #f5e6b8);
-      color: #050814;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+      /* Gradiente azul para los botones principales */
+      background: linear-gradient(135deg, var(--accent), #6fa8dc);
+      /* Texto en blanco para mayor contraste */
+      color: #ffffff;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
     }
 
     .btn-primary:hover {
@@ -185,12 +192,12 @@
 
     .btn-ghost {
       background: transparent;
-      border-color: rgba(212, 175, 55, 0.4);
+      border-color: rgba(13, 75, 143, 0.4);
       color: var(--accent);
     }
 
     .btn-ghost:hover {
-      background: rgba(212, 175, 55, 0.06);
+      background: rgba(13, 75, 143, 0.06);
     }
 
     /* Hero */
@@ -227,8 +234,8 @@
       color: var(--accent);
       padding: 0.35rem 0.9rem;
       border-radius: 999px;
-      border: 1px solid rgba(212,175,55,0.3);
-      background: radial-gradient(circle at top left, rgba(212,175,55,0.25), transparent 60%);
+      border: 1px solid rgba(13,75,143,0.3);
+      background: radial-gradient(circle at top left, rgba(13,75,143,0.25), transparent 60%);
       margin-bottom: 1.1rem;
     }
 
@@ -247,7 +254,7 @@
     }
 
     .hero-highlight {
-      background-image: linear-gradient(120deg, #f5e6b8, #d4af37);
+      background-image: linear-gradient(120deg, #dbe8f7, var(--accent));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -285,8 +292,8 @@
       position: relative;
       padding: 1.4rem 1.4rem 1.6rem;
       border-radius: var(--radius-lg);
-      background: radial-gradient(circle at top, rgba(212,175,55,0.16), transparent 55%), var(--card);
-      border: 1px solid rgba(212,175,55,0.18);
+      background: radial-gradient(circle at top, rgba(13,75,143,0.16), transparent 55%), var(--card);
+      border: 1px solid rgba(13,75,143,0.18);
       box-shadow: var(--shadow-soft);
       overflow: hidden;
     }
@@ -342,8 +349,9 @@
       font-size: 0.72rem;
       padding: 0.15rem 0.6rem;
       border-radius: 999px;
-      border: 1px solid rgba(212,175,55,0.4);
-      background: rgba(5,8,20,0.9);
+      border: 1px solid rgba(13,75,143,0.4);
+      /* Fondo muy suave en tono azul para resaltar las chips sobre fondo claro */
+      background: rgba(13,75,143,0.08);
       color: var(--accent);
     }
 
@@ -397,7 +405,7 @@
     .card {
       border-radius: var(--radius-md);
       padding: 1.2rem 1.2rem 1.3rem;
-      background: radial-gradient(circle at top left, rgba(212,175,55,0.08), transparent 60%), var(--bg-alt);
+      background: radial-gradient(circle at top left, rgba(13,75,143,0.08), transparent 60%), var(--bg-alt);
       border: 1px solid var(--border);
       transition: transform 0.18s ease-out, box-shadow 0.18s ease-out, border-color 0.18s ease-out, background 0.18s ease-out;
     }
@@ -405,15 +413,15 @@
     .card:hover {
       transform: translateY(-3px);
       box-shadow: var(--shadow-soft);
-      border-color: rgba(212,175,55,0.4);
-      background: radial-gradient(circle at top left, rgba(212,175,55,0.16), transparent 65%), var(--bg-alt);
+      border-color: rgba(13,75,143,0.4);
+      background: radial-gradient(circle at top left, rgba(13,75,143,0.16), transparent 65%), var(--bg-alt);
     }
 
     .card-icon {
       width: 30px;
       height: 30px;
       border-radius: 999px;
-      border: 1px solid rgba(212,175,55,0.5);
+      border: 1px solid rgba(13,75,143,0.5);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -470,7 +478,7 @@
       height: 10px;
       border-radius: 999px;
       border: 2px solid var(--accent);
-      box-shadow: 0 0 0 3px rgba(212,175,55,0.15);
+      box-shadow: 0 0 0 3px rgba(13,75,143,0.15);
     }
 
     .list-item h4 {
@@ -511,8 +519,9 @@
     .step {
       padding: 1rem;
       border-radius: var(--radius-md);
-      border: 1px dashed rgba(212,175,55,0.5);
-      background: rgba(5,8,20,0.8);
+      border: 1px dashed rgba(13,75,143,0.5);
+      /* Fondo ligeramente azulado para destacar cada paso sobre el fondo claro */
+      background: rgba(13,75,143,0.05);
     }
 
     .step-number {
@@ -555,7 +564,7 @@
       border-radius: var(--radius-lg);
       padding: 1.5rem 1.4rem 1.6rem;
       border: 1px solid var(--border);
-      box-shadow: 0 14px 35px rgba(0,0,0,0.45);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
 
     .form-row {
@@ -582,7 +591,8 @@
       padding: 0.55rem 0.7rem;
       border-radius: 0.65rem;
       border: 1px solid var(--border);
-      background: #050814;
+      /* Campos de formulario en tono claro */
+      background: var(--bg-alt);
       color: var(--text);
       font-size: 0.86rem;
       outline: none;
@@ -590,9 +600,9 @@
     }
 
     input:focus, textarea:focus {
-      border-color: rgba(212,175,55,0.7);
-      box-shadow: 0 0 0 1px rgba(212,175,55,0.4);
-      background: #070b1b;
+      border-color: rgba(13,75,143,0.7);
+      box-shadow: 0 0 0 1px rgba(13,75,143,0.4);
+      background: #ffffff;
     }
 
     textarea {
@@ -697,7 +707,7 @@
           <div class="logo-mark">S&E</div>
           <div class="logo-text">
             <span>S&E LEGACY GMBH</span>
-            <span>Asset & Property Management · Suiza</span>
+            <span>Family&nbsp;office&nbsp;independiente · Suiza</span>
           </div>
         </div>
         <div class="nav-links">
@@ -720,15 +730,15 @@
         <div>
           <div class="hero-kicker">
             <span class="dot"></span>
-            <span>Gestión patrimonial · Suiza · Lucerna</span>
+            <span>Family&nbsp;office&nbsp;independiente · Suiza · Lucerna</span>
           </div>
           <h1>
-            Estructuramos tu <span class="hero-highlight">patrimonio inmobiliario</span> con eficiencia fiscal desde Suiza.
+            Tu <span class="hero-highlight">Family&nbsp;Office&nbsp;independiente</span> para gestionar y optimizar tu capital personal y patrimonio.
           </h1>
           <p>
-            S&E Legacy GmbH es una sociedad suiza dedicada a la administración de rentas, propiedades
-            y capital familiar, con foco en activos en España, República Dominicana y otros mercados europeos,
-            aprovechando la estabilidad jurídica y fiscal de Suiza.
+            Como <em>family office independiente</em> con base en Lucerna (Suiza), S&amp;E&nbsp;Legacy GmbH se dedica a la gestión integral del capital y patrimonio familiar,
+            no como un gestor de activos sino como administrador de capital personal. Nuestro foco se encuentra en activos ubicados en España, República Dominicana y otros
+            mercados europeos, aprovechando la estabilidad jurídica y fiscal helvética para planificar a largo plazo.
           </p>
 
           <div class="hero-actions">
@@ -743,7 +753,7 @@
           <div class="hero-meta">
             <div>
               <strong>Base en Lucerna (CH)</strong><br/>
-              GmbH enfocada en gestión de rentas y propiedades familiares.
+              GmbH que actúa como family office independiente para el capital familiar.
             </div>
             <div>
               <strong>Óptica de largo plazo</strong><br/>
@@ -779,11 +789,11 @@
       <div class="container">
         <div class="section-header">
           <div class="section-kicker">Quiénes somos</div>
-          <h2 class="section-title">S&E Legacy GmbH: una plataforma suiza para el patrimonio familiar.</h2>
+          <h2 class="section-title">S&amp;E Legacy GmbH: tu Family Office independiente en Suiza.</h2>
           <p class="section-subtitle">
-            Nuestra sociedad de responsabilidad limitada (GmbH / Sàrl) con sede en Suiza central se ha creado
-            con un objetivo claro: centralizar la gestión de rentas, participaciones y activos inmobiliarios de la
-            familia en una jurisdicción estable, eficiente fiscalmente y bien conectada con España y otros países.
+            Como <em>family office independiente</em>, operamos a través de una sociedad de responsabilidad limitada (GmbH / Sàrl) en el corazón
+            de Suiza. Nuestro objetivo es centralizar la gestión del capital personal, rentas y activos inmobiliarios de la familia
+            en una jurisdicción estable, fiscalmente eficiente y bien conectada con España y otros países.
           </p>
         </div>
       </div>
